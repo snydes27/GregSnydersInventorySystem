@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gregsnydersinventorysystem.View_Controller.ProductScreenController">
+   <children>
+      <TableView layoutX="389.0" layoutY="51.0" prefHeight="175.0" prefWidth="447.0">
+        <columns>
+          <TableColumn prefWidth="69.0" text="ID" />
+          <TableColumn prefWidth="126.0" text="Part Name" />
+            <TableColumn prefWidth="129.0" text="Inventory Level" />
+            <TableColumn prefWidth="122.0" text="Price Per Unit" />
+        </columns>
+      </TableView>
+      <TableView layoutX="389.0" layoutY="268.0" prefHeight="175.0" prefWidth="447.0">
+         <columns>
+            <TableColumn prefWidth="69.0" text="ID" />
+            <TableColumn prefWidth="126.0" text="Part Name" />
+            <TableColumn prefWidth="129.0" text="Inventory Level" />
+            <TableColumn prefWidth="122.0" text="Price Per Unit" />
+         </columns>
+      </TableView>
+      <Text layoutX="21.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Product">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="searchPartButton" layoutX="511.0" layoutY="15.0" mnemonicParsing="false" onAction="#searchPartClicked" text="Search" />
+      <Button fx:id="addPartButton" layoutX="765.0" layoutY="234.0" mnemonicParsing="false" onAction="#addPartClicked" text="Add" />
+      <Button fx:id="deletePartutton" layoutX="752.0" layoutY="452.0" mnemonicParsing="false" onAction="#deletePartClicked" text="Delete" />
+      <Button fx:id="cancelProductButton" layoutX="690.0" layoutY="501.0" mnemonicParsing="false" onAction="#cancelProductClicked" text="Cancel" />
+      <Button fx:id="saveProductButton" layoutX="762.0" layoutY="501.0" mnemonicParsing="false" onAction="#saveProductClicked" text="Save" />
+      <TextField fx:id="productID" editable="false" layoutX="124.0" layoutY="113.0" />
+      <Label layoutX="97.0" layoutY="118.0" text="ID" />
+      <Label layoutX="80.0" layoutY="155.0" text="Name" />
+      <Label layoutX="60.0" layoutY="194.0" text="Inventory" />
+      <Label layoutX="83.0" layoutY="233.0" text="Price" />
+      <Label layoutX="88.0" layoutY="276.0" text="Max" />
+      <Label layoutX="197.0" layoutY="276.0" text="Min" />
+      <TextField fx:id="searchPartField" layoutX="573.0" layoutY="15.0" prefHeight="25.0" prefWidth="263.0" />
+      <TextField fx:id="productName" editable="false" layoutX="123.0" layoutY="151.0" />
+      <TextField fx:id="productCount" editable="false" layoutX="123.0" layoutY="190.0" />
+      <TextField fx:id="productPrice" editable="false" layoutX="123.0" layoutY="229.0" />
+      <TextField fx:id="productMax" editable="false" layoutX="119.0" layoutY="272.0" prefHeight="25.0" prefWidth="61.0" />
+      <TextField fx:id="productMin" editable="false" layoutX="227.0" layoutY="272.0" prefHeight="25.0" prefWidth="61.0" />
+   </children>
+</AnchorPane>
